@@ -159,7 +159,10 @@ function ScrubbedIntro() {
               muted
               loop
               playsInline
+              preload="auto"
               poster="/videos/roastery-poster.jpg"
+              disablePictureInPicture
+              disableRemotePlayback
               className="absolute inset-0 w-full h-full object-cover"
             >
               <source src="/videos/roastery-loop.webm" type="video/webm" />

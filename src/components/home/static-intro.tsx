@@ -48,6 +48,9 @@ export function StaticIntro() {
             muted
             loop
             playsInline
+            preload="auto"
+            disablePictureInPicture
+            disableRemotePlayback
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source src="/videos/roastery-loop.webm" type="video/webm" />
@@ -108,7 +111,8 @@ export function StaticIntro() {
               className="absolute inset-0 w-full h-full object-cover"
             >
               <source src="/videos/roastery-loop.webm" type="video/webm" />
-              <source src="/videos/roastery-loop.mp4" type="video/mp4" />
+              <source src="/videos/roastery-loop.webm" type="video/webm" />
+            <source src="/videos/roastery-loop.mp4" type="video/mp4" />
             </video>
           ) : (
             <div className="absolute inset-0" style={{ background: PLACEHOLDER_GRADIENT }} />

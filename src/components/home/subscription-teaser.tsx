@@ -30,7 +30,7 @@ export function SubscriptionTeaser() {
             style={{
               maxWidth: 480,
               alignSelf: 'center',
-              justifySelf: 'start',
+              justifySelf: 'end',
             }}
           >
             <p
