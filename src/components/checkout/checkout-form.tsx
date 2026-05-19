@@ -11,11 +11,15 @@ const schema = z.object({
   name: z.string().min(1),
   surname: z.string().min(1),
   phone: z.string().min(8),
-  identityNumber: z.string().min(5).default('11111111111'),
   address: z.string().min(8),
   city: z.string().min(1),
   zipCode: z.string().min(1),
 });
+
+// iyzico requires a TC Kimlik No on the buyer payload. We send a placeholder
+// to keep their API happy; the field was removed from the user-facing form
+// per client request.
+const IYZICO_IDENTITY_PLACEHOLDER = '11111111111';
 
 type FormValues = z.infer<typeof schema>;
 
@@ -51,7 +55,12 @@ export function CheckoutForm() {
     const res = await fetch('/api/iyzico/checkout', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ ...values, country: 'Türkiye', lines }),
+      body: JSON.stringify({
+        ...values,
+        identityNumber: IYZICO_IDENTITY_PLACEHOLDER,
+        country: 'Türkiye',
+        lines,
+      }),
     });
     const json = await res.json();
     if (json.stub) {
@@ -92,12 +101,6 @@ export function CheckoutForm() {
           <Field id="surname" label="Last name" {...register('surname')} error={errors.surname?.message} />
         </div>
         <Field id="phone" label="Phone" {...register('phone')} error={errors.phone?.message} />
-        <Field
-          id="identityNumber"
-          label="TC Kimlik No"
-          {...register('identityNumber')}
-          error={errors.identityNumber?.message}
-        />
         <Field id="address" label="Address" {...register('address')} error={errors.address?.message} />
         <div className="grid grid-cols-2 gap-4">
           <Field id="city" label="City" {...register('city')} error={errors.city?.message} />
