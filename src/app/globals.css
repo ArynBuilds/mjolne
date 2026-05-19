@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+
+    --color-ink: #0A0A0A;
+    --color-paper: #FFFFFF;
+    --color-surface: #F8F8F8;
+    --color-hairline: #E0E0E0;
+    --color-mute: #999999;
+    --color-fog: #EDEDED;
+
+    --shadow-card: 0 1px 2px rgba(10, 10, 10, 0.07), 0 8px 24px rgba(10, 10, 10, 0.09);
+    --shadow-card-hover: 0 2px 4px rgba(10, 10, 10, 0.09), 0 16px 36px rgba(10, 10, 10, 0.14);
+
+    --color-peru: #1C4732;
+    --color-ethiopia: #4475D4;
+    --color-colombia: #6B1818;
+    --color-brazil: #E89832;
+
+    --color-live: #FF4444;
+
+    --gradient-holo: linear-gradient(
+      110deg,
+      #F5D8E9 0%,
+      #D8E2F4 25%,
+      #EBE1F2 50%,
+      #D4EADA 75%,
+      #F3DFD0 100%
+    );
+
+    --gradient-holo-active: linear-gradient(
+      110deg,
+      #F4A06B 0%,
+      #E36B9A 35%,
+      #B68FE6 65%,
+      #7C5CFF 100%
+    );
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 14px;
+    --radius-pill: 999px;
+
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+    --ease-scrub: cubic-bezier(0.65, 0, 0.35, 1);
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 96px;
+    --space-10: 128px;
+
+    --container-max: 1440px;
+    --container-padding: 32px;
+  }
+
+  html {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Light-only theme: prevent browser auto-inversion */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  .underline-expand {
+    position: relative;
+  }
+  .underline-expand::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 240ms var(--ease-out-quart);
+  }
+  .underline-expand:hover::after,
+  .underline-expand:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .pill-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: transform 140ms var(--ease-out-quart), background 220ms var(--ease-out-quart), color 220ms var(--ease-out-quart);
+    cursor: pointer;
+    user-select: none;
+  }
+  .pill-button:active {
+    transform: scale(0.98);
+  }
+
+  .pill-button-primary {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  .pill-button-primary:hover {
+    background: #1A1A1A;
+  }
+
+  .pill-button-light {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  .pill-button-light:hover {
+    background: var(--color-fog);
+  }
+
+  .pill-button-ghost-on-dark {
+    background: transparent;
+    color: var(--color-paper);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .pill-button-ghost-on-dark:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-mute);
+  }
+
+  .hairline {
+    height: 0.5px;
+    background: var(--color-hairline);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .topo-stroke {
+    vector-effect: non-scaling-stroke;
+  }
+
+  /* Intro section pin — sticky lives here in CSS so it's stable on first
+     paint instead of waiting for the scrub effect to apply it. */
+  .intro-pin {
+    position: sticky;
+    top: 0;
+  }
+
+  /* Promote layers GSAP transforms every frame during the intro timeline. */
+  .intro-video-wrapper {
+    will-change: height;
+  }
+  .intro-shelf-row,
+  .shelf-column {
+    will-change: transform, opacity;
+  }
+
+  /* live dot pulse */
+  @keyframes live-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.45; }
+  }
+  .live-dot {
+    animation: live-pulse 2s ease-in-out infinite;
+  }
+
+  /* holo shimmer for animated stickers */
+  @keyframes holo-shimmer {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .holo-shimmer {
+    background-size: 200% 200%;
+    animation: holo-shimmer 8s ease-in-out infinite alternate;
+  }
+
+  /* Hero brand marquee — infinite right-to-left scroll. Track contains the
+     brand list duplicated; -50% translate keeps the loop seamless because
+     the second copy is at position 0 when the first finishes. */
+  @keyframes brand-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .brand-marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: max-content;
+    white-space: nowrap;
+    animation: brand-scroll 60s linear infinite;
+    will-change: transform;
+  }
+
+  /* Demleme section — per-panel parameter marquee, right-to-left. */
+  @keyframes demleme-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .demleme-marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: max-content;
+    white-space: nowrap;
+    animation: demleme-marquee 60s linear infinite;
+    will-change: transform;
+  }
+
+}
+
+/* View Transitions */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 380ms;
+  animation-timing-function: var(--ease-out-expo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

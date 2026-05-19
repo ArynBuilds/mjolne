@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "coffee": "Kahve",
+    "subscribe": "Abonelik",
+    "brewGuide": "Demleme Rehberi",
+    "story": "Hikaye",
+    "bag": "Sepet"
+  },
+  "hero": {
+    "headline": "Daha sessiz bir",
+    "headlineEm": "fincan.",
+    "ctaPrimary": "Roastı keşfet",
+    "ctaSecondary": "₺240/aydan başlayan abonelik"
+  },
+  "collection": {
+    "headline": "Hangi roastı seçersen seç,",
+    "headlineEm": "kendi tarzında",
+    "headlineTail": "demlenir."
+  },
+  "zanaat": {
+    "eyebrow": "— ZANAAT",
+    "headline": "Her köken,",
+    "headlineEm": "bir lezzet için.",
+    "paragraph": "Beş köken alıyoruz, beş ayrı disiplinle kavuruyoruz. Her birinin lezzeti, bir demleme yöntemi için özenle inşa ediliyor.",
+    "tastePeru": "karamel · fındık · narenciye",
+    "tasteEthiopiaYirgacheffe": "parlak asidite · narenciye",
+    "tasteEthiopiaLekempti": "çiçeksi · tatlı şarap",
+    "tasteColombia": "ceviz · şeftali · kakao",
+    "tasteBrazil": "kremsi · çikolata",
+    "readStory": "Hikayemizi oku"
+  },
+  "demleme": {
+    "eyebrow": "— DEMLEME",
+    "indexLabel": "06",
+    "headline": "Altı yöntem,",
+    "headlineEm": "altı disiplin.",
+    "credit": "Bir kahve fincanının yaklaşık %98.5'i sudur. Lezzeti belirleyen %1.5 ise <i>demleme disiplinine</i> bakar: doz, öğütüm, sıcaklık, zaman.",
+    "prepLabel": "— HAZIRLIK",
+    "pairsLabel": "— UYUMLU KÖKENLER",
+    "recipeLabel": "— TARİF",
+    "ctaAvailable": "Tarifi gör",
+    "ctaSoon": "Yakında",
+    "soonTag": "YAKINDA",
+    "grindLabel": "ÖĞÜTÜM",
+    "tempLabel": "SICAKLIK",
+    "pressureLabel": "BASINÇ",
+    "agitationLabel": "KARIŞTIRMA",
+    "orientationLabel": "KONUM",
+    "restLabel": "DİNLENME",
+    "heatLabel": "ATEŞ",
+    "finishLabel": "BİTİRİŞ"
+  },
+  "subscription": {
+    "cardWordmark": "MJØLNE",
+    "cardLabel": "ABONELİK",
+    "cardHeadline": "Salı sabahı,",
+    "cardHeadlineEm": "kapına gelir.",
+    "cardCadence": "HER SALI · 250 G",
+    "cardPrice": "₺240/AY'DAN",
+    "eyebrow": "— ABONELİK SİSTEMİMİZ",
+    "question": "Sürekli sipariş vermek istemiyor musun?",
+    "body": "Aboneliğini kendin oluştur. Kahven, istediğin sıklıkla, evine gelsin.",
+    "cta": "Aboneliğimi oluştur",
+    "caption": "Salı kavurma, Çarşamba kargoda."
+  },
+  "story": {
+    "tagline": "Crafted for early risers.",
+    "h1": "Sadece kahve değil.",
+    "h2": "MJØLNE.",
+    "body1": "MJØLNE Roastery olarak, kurumsal iş dünyasının dinamiklerine uyumlu, yüksek standartlı ve sürdürülebilir kahve çözümleri sunuyoruz. Kahvenin yalnızca bir içecek değil; iş verimliliğini, takım motivasyonunu ve ofis kültürünü doğrudan etkileyen bir deneyim olduğuna inanıyoruz. Bu anlayışla, her fincanda aynı kaliteyi sunmayı amaçlayan bütünsel bir hizmet yaklaşımı benimsiyoruz.",
+    "body2": "Yolculuğumuz, dünyanın farklı bölgelerinden özenle seçilmiş, nitelikli kahve çekirdekleriyle başlar. Her bir çekirdek; aroma profili, denge ve karakter açısından titizlikle değerlendirilir, ardından uzman roast süreçlerinden geçirilerek ideal formuna kavuşturulur. Kullandığımız tüm kahve çekirdekleri uluslararası kalite standartlarına uygun olarak özenle seçilmekte ve işlenmektedir. Her aşamada uyguladığımız sıkı kalite kontrol mekanizmalarıyla, ofisinize her seferinde taze, dengeli ve aromatik bir kahve deneyimi sunuyoruz.",
+    "body3": "MJØLNE Roastery yalnızca ürün tedarik eden bir marka değil; iş ortaklarının ihtiyaçlarını anlayan ve onlara özel çözümler geliştiren bir hizmet sağlayıcıdır. Düzenli tedarik planlamamız ile kurumsal firmaların kahve sürecini uçtan uca yönetiyor, çalışanlarına operasyonel yük olmadan kesintisiz ve kaliteli bir kahve deneyimi sunmalarını sağlıyoruz.",
+    "closing": "Crafted for early risers.",
+    "readCatalog": "Kataloğu indir"
+  },
+  "footer": {
+    "newsletter": "Bültene kaydol",
+    "newsletterPlaceholder": "E-posta adresiniz",
+    "newsletterCta": "Kaydol",
+    "coffee": "Kahve",
+    "company": "Şirket",
+    "help": "Yardım",
+    "visit": "Bize Ulaşın",
+    "story": "Hikaye",
+    "wholesale": "Toptan Satış",
+    "press": "Basın",
+    "careers": "Kariyer",
+    "brewGuide": "Demleme Rehberi",
+    "shipping": "Kargo",
+    "returns": "İade",
+    "account": "Hesap",
+    "subscribe": "Abonelik",
+    "city": "İstanbul, TR",
+    "rights": "© 2026 MJØLNE Roastery Co.",
+    "tagline": "İstanbul'da hazırlanır.",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar"
+  },
+  "common": {
+    "addToBag": "Sepete ekle",
+    "subscribe": "Abone ol",
+    "from": "den itibaren",
+    "perMonth": "/ay",
+    "back": "Geri",
+    "close": "Kapat"
+  }
+}

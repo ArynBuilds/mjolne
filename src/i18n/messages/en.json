@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "coffee": "Coffee",
+    "subscribe": "Subscribe",
+    "brewGuide": "Brew Guide",
+    "story": "Story",
+    "bag": "Bag"
+  },
+  "hero": {
+    "headline": "A quieter",
+    "headlineEm": "cup.",
+    "ctaPrimary": "Shop the roast",
+    "ctaSecondary": "Subscribe from ₺240/mo"
+  },
+  "collection": {
+    "headline": "Whatever your",
+    "headlineEm": "roast,",
+    "headlineTail": "brewed on your terms."
+  },
+  "zanaat": {
+    "eyebrow": "— THE CRAFT",
+    "headline": "Every origin,",
+    "headlineEm": "for a flavor.",
+    "paragraph": "Five origins, roasted with five separate disciplines. Each one's flavor is shaped, carefully, for one brewing method.",
+    "tastePeru": "caramel · hazelnut · citrus",
+    "tasteEthiopiaYirgacheffe": "bright acidity · citrus",
+    "tasteEthiopiaLekempti": "floral · sweet wine",
+    "tasteColombia": "walnut · peach · cocoa",
+    "tasteBrazil": "creamy · chocolate",
+    "readStory": "Read our story"
+  },
+  "demleme": {
+    "eyebrow": "— THE BREW",
+    "indexLabel": "06",
+    "headline": "Six methods,",
+    "headlineEm": "six disciplines.",
+    "credit": "A cup of coffee is about 98.5% water. The remaining 1.5% leans on <i>the discipline of the brew</i>: dose, grind, temperature, time.",
+    "prepLabel": "— PREPARATION",
+    "pairsLabel": "— PAIRS WITH",
+    "recipeLabel": "— RECIPE",
+    "ctaAvailable": "Read the recipe",
+    "ctaSoon": "Coming soon",
+    "soonTag": "SOON",
+    "grindLabel": "GRIND",
+    "tempLabel": "TEMP",
+    "pressureLabel": "PRESSURE",
+    "agitationLabel": "AGITATION",
+    "orientationLabel": "ORIENTATION",
+    "restLabel": "REST",
+    "heatLabel": "HEAT",
+    "finishLabel": "FINISH"
+  },
+  "subscription": {
+    "cardWordmark": "MJØLNE",
+    "cardLabel": "SUBSCRIPTION",
+    "cardHeadline": "Tuesday morning,",
+    "cardHeadlineEm": "at your door.",
+    "cardCadence": "EVERY TUESDAY · 250 G",
+    "cardPrice": "FROM ₺240/MO",
+    "eyebrow": "— OUR SUBSCRIPTION",
+    "question": "Tired of placing the same order every week?",
+    "body": "Build your own subscription. Coffee, on the cadence you choose, delivered to your door.",
+    "cta": "Build my subscription",
+    "caption": "Roasted Tuesday, shipped Wednesday."
+  },
+  "story": {
+    "tagline": "Crafted for early risers.",
+    "h1": "It's not just coffee.",
+    "h2": "It's MJØLNE.",
+    "body1": "At MJØLNE Roastery, we offer high-standard, sustainable coffee solutions adapted to the dynamics of the corporate business world. We believe coffee isn't just a beverage, it's an experience that directly affects work productivity, team motivation, and office culture. With this understanding, we adopt a holistic service approach aimed at delivering the same quality in every cup.",
+    "body2": "Our journey begins with carefully selected, qualified beans from different regions of the world. Each bean is meticulously evaluated for its aroma profile, balance, and character, then brought to its ideal form through expert roasting processes. All the coffee beans we source are carefully selected and processed in accordance with international quality standards. Through the rigorous quality control mechanisms we run at every stage, from roasting to packaging, we deliver a fresh, balanced, and aromatic coffee experience to your office, every time.",
+    "body3": "MJØLNE Roastery is not just a brand that supplies a product; we are a service provider that understands the needs of our business partners and develops solutions tailored to them. Through our regular supply planning, we manage the entire coffee process for corporate firms end-to-end, allowing our partners to offer their employees an uninterrupted, quality coffee experience without operational burden.",
+    "closing": "Crafted for early risers.",
+    "readCatalog": "Read the catalog"
+  },
+  "footer": {
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Your email",
+    "newsletterCta": "Sign up",
+    "coffee": "Coffee",
+    "company": "Company",
+    "help": "Help",
+    "visit": "Visit",
+    "story": "Story",
+    "wholesale": "Wholesale",
+    "press": "Press",
+    "careers": "Careers",
+    "brewGuide": "Brew guide",
+    "shipping": "Shipping",
+    "returns": "Returns",
+    "account": "Account",
+    "subscribe": "Subscribe",
+    "city": "Istanbul, TR",
+    "rights": "© 2026 MJØLNE Roastery Co.",
+    "tagline": "Crafted in Istanbul.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "common": {
+    "addToBag": "Add to bag",
+    "subscribe": "Subscribe",
+    "from": "from",
+    "perMonth": "/mo",
+    "back": "Back",
+    "close": "Close"
+  }
+}
